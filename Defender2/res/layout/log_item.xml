@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical" >
+    
+    <!-- 号码，拨打时间 ，处理方式-->
+    <TextView 
+        android:id="@+id/log_number"
+        android:textColor="@color/log_item_textcolor"
+        android:textSize="@dimen/log_item_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_marginLeft="@dimen/margin"
+ 		android:layout_marginRight="@dimen/margin" />
+    <TextView 
+        android:id="@+id/log_time"
+        android:textSize="@dimen/log_item_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_marginLeft="@dimen/margin"
+ 		android:layout_marginRight="@dimen/margin"/>
+    <TextView 
+        android:id="@+id/log_process"
+        android:textSize="@dimen/log_item_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_marginLeft="@dimen/margin"
+ 		android:layout_marginRight="@dimen/margin"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 标题栏 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#009999" >
+        <TextView 
+            android:text="@string/title_home"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textsize"
+            android:textColor="@color/title_textcolor"/>
+    </RelativeLayout>
+    
+    <!-- Logo -->
+    <ImageView 
+        android:id="@+id/home_logo"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/contentdescription"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:src="@drawable/logo"/>
+    
+    <!-- 提示语和switch开关 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+       	<Switch 
+       		android:id="@+id/home_switch"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:textSize="@dimen/home_switch_size"
+        	android:textOn="@string/home_switch_on"
+        	android:textOff="@string/home_switch_off" />
+       	<TextView 
+       	    android:layout_height="wrap_content"
+       	    android:layout_width="wrap_content"
+       	    android:layout_above="@id/home_switch"
+       	    android:layout_centerHorizontal="true"
+        	android:textSize="@dimen/home_tip_size"
+       	    android:text="@string/home_switch_tips"/>
+    </RelativeLayout>
+
+</LinearLayout>

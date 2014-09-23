@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- 标题栏 -->
+    <RelativeLayout 
+        android:id="@+id/importcontact_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="#009999" >
+        <TextView 
+            android:text="@string/title_setting_import"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textsize"
+            android:textColor="@color/title_textcolor"/>
+    </RelativeLayout>
+    
+    <!-- 确认按钮 -->
+    <Button 
+        android:id="@+id/importcontact_finish_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:text="@string/setting_import_finish"
+        android:textSize="@dimen/button_text_size" />
+    
+    <!-- 联系人列表 -->
+    <ListView 
+        android:id="@+id/importcontact_list"
+        android:layout_above="@id/importcontact_finish_button"
+        android:layout_below="@id/importcontact_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+</RelativeLayout>

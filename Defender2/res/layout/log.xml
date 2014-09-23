@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 标题栏 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#009999" >
+        <TextView 
+            android:text="@string/title_log"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textsize"
+            android:textColor="@color/title_textcolor"/>
+        
+        <TextView 
+            android:id="@+id/log_clear"
+            android:text="@string/title_log_clear"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/log_item_textsize"
+            android:textColor="@color/title_textcolor"/>
+        <TextView 
+            android:id="@+id/log_refresh"
+            android:text="@string/title_log_refresh"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/log_clear"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/log_item_textsize"
+            android:textColor="@color/title_textcolor"/>
+    </RelativeLayout>
+    
+    <!-- 防护日志列表 -->
+    <ListView 
+        android:id="@+id/log_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

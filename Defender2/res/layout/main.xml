@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@android:id/tabhost" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <!-- 标签内容 -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="10"> 
+            <!-- 在此添加tab选项 -->
+        </FrameLayout>
+        
+        <!-- 标签菜单位于底部 -->
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+</TabHost>

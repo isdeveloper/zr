@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">音盾</string>
+    <string name="exit">EXIT</string>
+    <string name="contentdescription">imageview</string>
+    <string name="title_home">首页</string>
+    <string name="title_log">日志</string>
+    <string name="title_log_clear">清空</string><string name="title_log_refresh">刷新</string><string name="title_mark">标记垃圾电话？</string><string name="title_remind">陌生来电(非垃圾)</string><string name="title_setting">设置</string>
+    <string name="title_setting_blacklist">黑名单</string>
+    <string name="title_setting_import">导入联系人</string>
+    <string name="title_setting_about">关于</string>
+    <string name="title_setting_whitelist">白名单</string>
+    
+    <string name="home_switch_tips">打开/关闭防护</string>
+    <string name="home_switch_on">打开</string>
+    <string name="home_switch_off">关闭</string>
+    
+    <string name="setting_about_appname" >AppName: YinDun</string><string name="setting_about_version">Version: 1.0\nDeveloper: Bin</string><string name="setting_about_copyright">Copyright @ ***bin</string><string name="setting_additem_name">姓名</string>
+    <string name="setting_additem_phone">电话</string>
+    
+    <string name="setting_add">添加</string>
+    <string name="setting_import">导入</string>
+    <string name="setting_rtn">返回</string>
+    <string name="setting_import_finish">完成</string>
+    <string name="mark_tip">号码：</string><string name="mark_m">标记</string>
+    <string name="mark_unm">不标记</string>
+    <string name="remind_cancel">挂断</string>
+    <string name="remind_answer">接听</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</resources>

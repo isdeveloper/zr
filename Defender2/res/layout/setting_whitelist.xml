@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 标题栏 -->
+    <RelativeLayout 
+        android:id="@+id/setting_whitelist_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#009999" >
+        <TextView 
+            android:text="@string/title_setting_whitelist"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textsize"
+            android:textColor="@color/title_textcolor"/>
+    </RelativeLayout>
+    
+    <!-- 添加、导入、返回按钮 -->
+    <LinearLayout
+        android:id="@+id/setting_whitelist_buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <Button 
+	        android:id="@+id/setting_whitelist_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/setting_add"
+	        android:textSize="@dimen/button_text_size"
+	        style="?android:attr/buttonBarButtonStyle" />
+        <Button 
+	        android:id="@+id/setting_whitelist_import"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/setting_import"
+	        android:textSize="@dimen/button_text_size"
+	        style="?android:attr/buttonBarButtonStyle" />
+        <Button 
+	        android:id="@+id/setting_whitelist_rtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/setting_rtn"
+	        android:textSize="@dimen/button_text_size"
+	        style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    
+    <!-- 黑名单列表 -->
+    <ListView 
+        android:id="@+id/setting_whitelist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/setting_whitelist_buttonlayout"
+        android:layout_below="@id/setting_whitelist_title" >
+    </ListView>
+    
+</RelativeLayout>
